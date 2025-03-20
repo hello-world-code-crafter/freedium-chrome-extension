@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Freedium for Medium",
+    "version": "1.0",
+    "description": "Adds a context menu to open Medium articles through Freedium, bypassing the paywall.",
+    "permissions": [
+      "contextMenus",
+      "tabs"
+    ],
+    "host_permissions": [
+      "*://medium.com/*",
+      "https://freedium.cfd/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
